@@ -1,0 +1,46 @@
+{
+  "annonces": [
+    {
+      "id": 1,
+      "titre": "Annonce 1",
+      "description": "Soirées d'Entreprise ....",
+      "position": "haut",
+      "etat": "confirmé"
+    },
+    {
+      "id": 2,
+      "titre": "Annonce 2",
+      "description": "Séminaires d'Entreprise ....",
+      "position": "bas",
+      "etat": "annulé"
+    },
+    {
+      "id": 3,
+      "titre": "Annonce 3",
+      "description": "Lancement de Produits ....",
+      "position": "bas",
+      "etat": "en attente"
+    },
+    {
+      "id": 9,
+      "titre": "annonce 9",
+      "description": "test9",
+      "position": "test9",
+      "etat": "annulé"
+    },
+    {
+      "id": 10,
+      "titre": "annonce 10",
+      "description": "test10",
+      "position": "test1",
+      "etat": "confirmé"
+    },
+    {
+      "id": 5,
+      "titre": "annonce 5",
+      "description": "test5",
+      "position": "test5",
+      "etat": "confirmé"
+    }
+  ]
+}

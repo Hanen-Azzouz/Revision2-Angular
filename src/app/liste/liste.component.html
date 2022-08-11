@@ -1,0 +1,22 @@
+<p>liste works!</p>
+  
+
+<div *ngFor="let i of liste">
+    <div *ngIf="i.etat=='confirmé'" [style.background-color]="'green'" >
+    {{i.titre}}
+    {{i.description}}
+    {{i.position}}
+    {{i.etat}}
+    
+    </div>
+    <div *ngIf="i.etat=='en attente'"[style.background-color]="'red'">
+        {{i.titre}}
+        {{i.description}}
+        {{i.position}}
+        {{i.etat}}
+    </div>    
+
+</div>
+
+
+

@@ -1,0 +1,21 @@
+<p>Veuillez remplir le formulaire</p>
+<form #f1="ngForm" >
+    <div >
+    <label for="">ID</label><input type="number"name="id" [(ngModel)]="annonces.id" required #id="ngModel">
+       </div>
+   <div >
+    <label for="">Titre</label><input type="text" name="titre" [(ngModel)]="annonces.titre" required #t="ngModel">
+   </div>
+   <div *ngIf="t.invalid">le champ est obligatoire!!</div>
+   <div >
+    <label>Description</label><input type="text" name="description" [(ngModel)]="annonces.description" >
+   </div>   
+    <div > <label >Position</label><input type ="text" name="position"[(ngModel)]="annonces.position"  maxlength='5'#position="ngModel">
+    </div>
+    <div *ngIf ="position.invalid">le Nombre de caracteres ne doit pas dépasser 5</div>
+    <div><label>Etat</label><input type="text" name="etat" [(ngModel)]="annonces.etat" >
+    </div> 
+    <input type="submit" name="add" value="ajouter" (click)="save(f1.value)">
+  
+
+</form>
